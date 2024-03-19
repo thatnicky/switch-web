@@ -4,18 +4,12 @@ import { Header } from "../elements/header";
 import { fetchUser } from "../utils/api";
 import { DiscordUser } from '../utils/types';
 import { useRouter } from "next/router";
-import { Metadata } from "next/dist/lib/metadata/types/metadata-interface";
 import Head from "next/head";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faDollarSign, faTools, faUsers } from '@fortawesome/free-solid-svg-icons'
 
 type Props = {
   discordUser: DiscordUser[];
-}
-
-export const metadata: Metadata = {
-  title: 'Home',
-  description: '...',
 }
 
 const Main: NextPage<Props> = (props) => {
